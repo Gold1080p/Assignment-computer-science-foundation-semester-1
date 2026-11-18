@@ -8,7 +8,7 @@ class Ticket:
             return self.base_price
 class studentTicket(Ticket):
     def price(self):
-            return super().price*0.5
+        return super().price() * 0.5
 class groupTicket(Ticket):
     def __init__(self, name, base_price, people):
         super().__init__(name, base_price)
