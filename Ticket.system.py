@@ -8,6 +8,6 @@ class Ticket:
             return self.base_price
         concert = Ticket("concert",200)
         museum = Ticket("museum",150)
-        print(concert.name, concert.price())
-        print(museum.name, museum.price())
+        print(concert.get_name(), concert.price())
+        print(museum.get_name(), museum.price())
         
